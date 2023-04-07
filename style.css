@@ -51,16 +51,10 @@ td:hover {
     left: 10px;
     top: 90px;
     border-spacing: 3px;
+    overflow-x: auto;
     
     
-  }
-  
-  @media screen and (max-width: 600px) {
-    table, h1, label, #fontPicker, td, button {
-      font-size: 12px;
-      border-spacing: 2px;
-    }
-  }
+  } 
 
   label {
     position: absolute;
