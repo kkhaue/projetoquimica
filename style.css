@@ -1,0 +1,224 @@
+body {
+    font-family: 'Trebuchet MS';
+    text-align: center;
+    padding-left: 82px;
+
+    
+}
+
+h1 {
+    text-align: center;
+    font-size: 45px;
+    height: 40px;
+}
+
+
+
+abbr {
+    text-decoration: none !important;
+}
+
+td {
+    font-family: 'Trebuchet MS';
+    font-size: 16px;
+    font-weight: bold;
+    height: 15px;
+    width: 50px;
+    padding: 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+td:empty {
+  visibility: hidden;
+}
+
+
+
+td:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+    z-index: 1;
+  }
+  
+
+  table {
+    margin: 30px;
+    position: absolute;
+    left: 10px;
+    top: 90px;
+    border-spacing: 3px;
+    
+    
+  }
+  
+  @media screen and (max-width: 600px) {
+    table, h1, label, #fontPicker, td, button {
+      font-size: 12px;
+      border-spacing: 2px;
+    }
+  }
+
+  label {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    overflow-x: auto;
+    font-family: 'Trebuchet MS';
+  }
+  
+  label:nth-of-type(2) {
+    top: 80px;
+  }
+  
+  label:nth-of-type(3) {
+    top: 140px;
+  }
+  
+  button {
+    position: absolute;
+    top: 170px;
+    left: 50px;
+    overflow-x: auto;
+    background-color: #ff9800; /* laranja */
+    color: white;
+    font-family: 'Trebuchet MS';
+    font-size: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    z-index: 1;
+  }
+  
+  button:hover {
+    background-color: #e65100; /* laranja escuro */
+    cursor: pointer;
+  }
+  
+
+#lnt {
+    position: relative;
+    top: 18px;
+}
+
+#act {
+    position: relative;
+    top: 25px;
+
+}
+
+#fontPicker{
+  position: absolute;
+    left: 245px;
+    top: 16px;
+    width: 100px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+  }
+  
+  #fontPicker::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 5px;
+  }
+  
+  #fontPicker::-webkit-color-swatch {
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #fontPicker::-moz-color-swatch {
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #fontPicker::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  #metalPicker{
+    position: absolute;
+    left: 245px;
+    top: 140px;
+    z-index: 1;
+    width: 100px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  #metalPicker::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 5px;
+  }
+  
+  #metalPicker::-webkit-color-swatch {
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #metalPicker::-moz-color-swatch {
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #metalPicker::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+
+
+#ametalPicker{
+    position: absolute;
+    left: 245px;
+    top: 78px;
+    z-index: 1;
+    width: 100px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  #ametalPicker::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 5px;
+  }
+  
+  #ametalPicker::-webkit-color-swatch {
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #ametalPicker::-moz-color-swatch {
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #ametalPicker::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+  
+
+
