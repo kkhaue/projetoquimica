@@ -4,7 +4,7 @@ function imagem() {
   const tabela = document.querySelector("#tabela");
 
   // Define a escala da imagem para aumentar a qualidade
-  const escala = 1.03;
+  const escala = 1.035;
 
   // Captura a imagem da tabela com html2canvas
   html2canvas(tabela, { 
