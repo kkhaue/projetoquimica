@@ -2,7 +2,6 @@ body {
     font-family: 'Trebuchet MS';
     text-align: center;
     padding-left: 82px;
-
     
 }
 
@@ -28,7 +27,7 @@ td {
     border: 1px solid black;
     border-collapse: collapse;
     border-radius: 4px;
-    overflow-x: auto;
+    overflow-x: auto;   
 }
 
 td:empty {
