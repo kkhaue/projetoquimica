@@ -4,7 +4,7 @@ function imagem() {
   const tabela = document.querySelector("#tabela");
 
   // Define a escala da imagem para aumentar a qualidade
-  const escala = 1.04 ;
+  const escala = 1.05 ;
 
   // Captura a imagem da tabela com html2canvas
   html2canvas(tabela, { 
@@ -15,9 +15,18 @@ function imagem() {
     // Converte a imagem em uma URL de dados
     const imgData = canvas.toDataURL();
 
-    // Abre uma nova janela com a imagem
-    const novaJanela = window.open();
-    novaJanela.document.write(`<img src="${imgData}" alt="Imagem da tabela">`);
+    // Cria um link de download com a imagem
+    const link = document.createElement('a');
+    link.href = imgData;
+    link.download = 'tabela.png';
+    document.body.appendChild(link);
+
+    // Clica no link para iniciar o download
+    link.click();
+
+    // Remove o link do documento
+    document.body.removeChild(link);
   });
 }
+
 
