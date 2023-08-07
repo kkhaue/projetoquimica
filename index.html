@@ -13,9 +13,15 @@
 
 <body>
 
+
+    <button id="arredondado" onclick="toggleValues('arredondado')">Valores Arredondados</button>
+    
+    <button id="decimal" onclick="toggleValues('decimal')">Valores Decimais</button>
+
     <button id="gerarPDF" onclick="imagem()">Baixe sua Tabela</button>
 
     <script src="gerarpdf.js"></script>
+    <script src="valores.js"></script>
     
 
     <label for="fontPicker">Escolha a cor da fonte:</label>
@@ -32,152 +38,185 @@
     
 
     <table id="tabela">
-            <th colspan="18">
-                <h1>TABELA PERIODICA</h1>
-                <H2>feito por khaue</H2>
+         
+
+        <tr>
+            <th colspan="1"></th>
+            <th colspan="6" style="vertical-align: bottom; position: relative;">
+              <td class="ametal">
+                <span class ="legenda"style="position: absolute; top: 10px; left: 830px;">⇽ Número Atômico</span> <!-- Seta para o número atômico -->
+                <span class ="legenda" style="position: absolute; top: 30px; left: 830px;">⇽ Simbolo</span> <!-- Seta para o símbolo -->
+                <span class ="legenda" style="position: absolute; top: 50px; left: 830px;">⇽ Nome</span>
+                <span class ="legenda" style="position: absolute; top: 70px; left: 830px;">⇽ Massa Molar</span> 
+                1
+                <br>
+                <abbr title="Hydrogen">H</abbr>
+                <br>
+                <span>Hidrogênio</span>
+                <span>1,0</span>
+                <br>
+              </td>
             </th>
+            <th colspan="1"></th>
+            <th colspan="16" style="empty-cells: hide;"></th>
+         
+      </th>
+    </tr>
+          
+    <th class="legendacores" colspan="10" style="vertical-align: bottom; position: relative;">
+            <td class="ametal">Ametal</td>
+    </th>
+
+    <th class="legendacores" colspan="1" style="top:10px; position: relative;">
+        <td class="metal">Metal</td>
+</th>
+
         </tr>
         <tr>
-            <td class="ametal">1<br><abbr title="Hydrogen"> H</abbr></td>
+            
+            <td class="ametal">1<br><abbr title="Hydrogen">H</abbr><br><span>Hidrogênio</span><br><span></span></td>
             <th colspan="16" style="empty-cells: hide;">
-            <td class="ametal">2<br><abbr title="Helium">He</abbr></td>
-        </tr>
-        <tr>
-            <td class="metal">3<br><abbr title="Lithium"> Li</abbr></td>
-            <td class="metal">4<br><abbr title="Berylium">Be</abbr></td>
+            <td class="ametal">2<br><abbr title="Hélio">He</abbr><br><span>Hélio</span><br><span></span></td>
+        <tr>                                                                                                                                                                                                                                                                                                                                                                                                        
+            <td class="metal">3<br><abbr title="Boro">Li</abbr><br><span>Lítio</span><br><span></span></td>
+            <td class="metal">4<br><abbr title="Berílio">Be</abbr><br><span>Berílio</span><br><span></span></td>
             <td colspan="10" style="empty-cells: hide;"></td>
-            <td class="ametal">5<br><abbr title="Boron">B</abbr></td>
-            <td class="ametal">6<br><abbr title="Carbon">C</abbr></td>
-            <td class="ametal">7<br><abbr title="Nitrogen">N</abbr></td>
-            <td class="ametal">8<br><abbr title="Oxygen">O</abbr></td>
-            <td class="ametal">9<br><abbr title="Florine">F</abbr></td>
-            <td class="ametal">10<br><abbr title="Neon">Ne</abbr></td>
+            <td class="ametal">5<br><abbr title="Boro">B</abbr><br><span>Boro</span><br><span></span></td>
+            <td class="ametal">6<br><abbr title="Carbono">C</abbr><br><span>Carbono</span><br><span></span></td>
+            <td class="ametal">7<br><abbr title="Nitrogênio">N</abbr><br><span>Nitrogênio</span><br><span></span></td>
+            <td class="ametal">8<br><abbr title="Oxigênio">O</abbr><br><span>Oxigênio</span><br><span></span></td>
+            <td class="ametal">9<br><abbr title="Flúor">F</abbr><br><span>Flúor</span><br><span></span></td>
+            <td class="ametal">10<br><abbr title="Neônio">Ne</abbr><br><span>Neônio</span><br><span></span></td>
+
         </tr>
         <tr>
-            <td class="metal">11<br><abbr title="Sodium">Na</abbr></td>
-            <td class="metal">12<br><abbr title="Magnesium">Mg</abbr></td>
+            <td class="metal">11<br><abbr title="Sódio">Na</abbr><br><span>Sódio</span><br><span></span></td>
+            <td class="metal">12<br><abbr title="Magnésio">Mg</abbr><br><span>Magnésio</span><br><span></span></td>
             <td colspan="10" style="empty-cells: hide;"></td>
-            <td class="metal">13<br><abbr title="Auminium">Al</abbr></td>
-            <td class="ametal">14<br><abbr title="Silicon">Si</abbr></td>
-            <td class="ametal">15<br><abbr title="Phosphorus">P</abbr></td>
-            <td class="ametal">16<br><abbr title="Sulphur">S</abbr></td>
-            <td class="ametal">17<br><abbr title="Chlorine">Cl</abbr></td>
-            <td class="ametal">18<br><abbr title="Argon">Ar</abbr></td>
+            <td class="metal">13<br><abbr title="Alumínio">Al</abbr><br><span>Alumínio</span><br><span></span></td>
+            <td class="ametal">14<br><abbr title="Silício">Si</abbr><br><span>Silício</span><br><span></span></td>
+            <td class="ametal">15<br><abbr title="Fósforo">P</abbr><br><span>Fósforo</span><br><span></span></td>
+            <td class="ametal">16<br><abbr title="Enxofre">S</abbr><br><span>Enxofre</span><br><span></span></td>
+            <td class="ametal">17<br><abbr title="Cloro">Cl</abbr><br><span>Cloro</span><br><span></span></td>
+            <td class="ametal">18<br><abbr title="Argônio">Ar</abbr><br><span>Argônio</span><br><span></span></td>
         </tr>
         <tr>
-            <td class="metal">19<br><abbr title="Potassium">K</abbr></td>
-            <td class="metal">20<br><abbr title="Calcium">Ca</abbr></td>
-            <td class="metal">21<br><abbr title="Scandium">Sc</abbr></td>
-            <td class="metal">22<br><abbr title="Titanium">Ti</abbr></td>
-            <td class="metal">23<br><abbr title="Vanadium">V</abbr></td>
-            <td class="metal">24<br><abbr title="Cromium">Cr</abbr></td>
-            <td class="metal">25<br><abbr title="Manganese">Mn</abbr></td>
-            <td class="metal">26<br><abbr title="Iron">Fe</abbr></td>
-            <td class="metal">27<br><abbr title="Cobalt">Co</abbr></td>
-            <td class="metal">28<br><abbr title="Nickel">Ni</abbr></td>
-            <td class="metal">29<br><abbr title="Copper">Cu</abbr></td>
-            <td class="metal">30<br><abbr title="Zinc">Zn</abbr></td>
-            <td class="metal">31<br><abbr title="Gallium">Ga</abbr></td>
-            <td class="ametal">32<br><abbr title="Germanium">Ge</abbr></td>
-            <td class="ametal">33<br><abbr title="Arsenic">As</abbr></td>
-            <td class="ametal">34<br><abbr title="Selenium">Se</abbr></td>
-            <td class="ametal">35<br><abbr title="Bromine">Br</abbr></td>
-            <td class="ametal">36<br><abbr title="Krypton">Kr</abbr></td>
+            <td class="metal">19<br><abbr title="Potássio">K</abbr><br><span>Potássio</span><br><span></span></td>
+            <td class="metal">20<br><abbr title="Cálcio">Ca</abbr><br><span>Cálcio</span><br><span></span></td>
+            <td class="metal">21<br><abbr title="Escândio">Sc</abbr><br><span>Escândio</span><br><span></span></td>
+            <td class="metal">22<br><abbr title="Titânio">Ti</abbr><br><span>Titânio</span><br><span></span></td>
+            <td class="metal">23<br><abbr title="Vanádio">V</abbr><br><span>Vanádio</span><br><span></span></td>
+            <td class="metal">24<br><abbr title="Crômio">Cr</abbr><br><span>Crômio</span><br><span></span></td>
+            <td class="metal">25<br><abbr title="Manganês">Mn</abbr><br><span>Manganês</span><br><span></span></td>
+            <td class="metal">26<br><abbr title="Ferro">Fe</abbr><br><span>Ferro</span><br><span></span></td>
+            <td class="metal">27<br><abbr title="Cobalto">Co</abbr><br><span>Cobalto</span><br><span></span></td>
+            <td class="metal">28<br><abbr title="Níquel">Ni</abbr><br><span>Níquel</span><br><span></span></td>
+            <td class="metal">29<br><abbr title="Cobre">Cu</abbr><br><span>Cobre</span><br><span></span></td>
+            <td class="metal">30<br><abbr title="Zinco">Zn</abbr><br><span>Zinco</span><br><span></span></td>
+            <td class="metal">31<br><abbr title="Gálio">Ga</abbr><br><span>Gálio</span><br><span></span></td>
+            <td class="metal">32<br><abbr title="Germanio">Ge</abbr><br><span>Germânio</span><br><span></span></td>
+            <td class="ametal">33<br><abbr title="Arsênio">As</abbr><br><span>Arsênio</span><br><span></span></td>
+            <td class="ametal">34<br><abbr title="Selênio">Se</abbr><br><span>Selênio</span><br><span></span></td>
+            <td class="ametal">35<br><abbr title="Bromo">Br</abbr><br><span>Bromo</span><br><span></span></td>
+            <td class="ametal">36<br><abbr title="Criptônio">Kr</abbr><br><span>Criptônio</span><br><span></span></td>
+        <tr>
+            <td class="metal">37<br><abbr title="Rubídio">Rb</abbr><br><span>Rubídio</span><br><span></span></td>
+            <td class="metal">38<br><abbr title="Estrôncio">Sr</abbr><br><span>Estrôncio</span><br><span></span></td>
+            <td class="metal">39<br><abbr title="Ítrio">Y</abbr><br><span>Ítrio</span><br><span></span></td>
+            <td class="metal">40<br><abbr title="Zircônio">Zr</abbr><br><span>Zircônio</span><br><span></span></td>
+            <td class="metal">41<br><abbr title="Nióbio">Nb</abbr><br><span>Nióbio</span><br><span></span></td>
+            <td class="metal">42<br><abbr title="Molibdênio">Mo</abbr><br><span>Molibdênio</span><br><span></span></td>
+            <td class="metal">43<br><abbr title="Tecnécio">Tc</abbr><br><span>Tecnécio</span><br><span></span></td>
+            <td class="metal">44<br><abbr title="Rutênio">Ru</abbr><br><span>Rutênio</span><br><span></span></td>
+            <td class="metal">45<br><abbr title="Ródio">Rh</abbr><br><span>Ródio</span><br><span></span></td>
+            <td class="metal">46<br><abbr title="Paládio">Pd</abbr><br><span>Paládio</span><br><span></span></td>
+            <td class="metal">47<br><abbr title="Prata">Ag</abbr><br><span>Prata</span><br><span></span></td>
+            <td class="metal">48<br><abbr title="Cádmio">Cd</abbr><br><span>Cádmio</span><br><span></span></td>
+            <td class="metal">49<br><abbr title="Índio">In</abbr><br><span>Índio</span><br><span></span></td>
+            <td class="metal">50<br><abbr title="Estanho">Sn</abbr><br><span>Estanho</span><br><span></span></td>
+            <td class="metal">51<br><abbr title="Antimônio">Sb</abbr><br><span>Antimônio</span><br><span></span></td>
+            <td class="ametal">52<br><abbr title="Telúrio">Te</abbr><br><span>Telúrio</span><br><span></span></td>
+            <td class="ametal">53<br><abbr title="Iodo">I</abbr><br><span>Iodo</span><br><span></span></td>
+            <td class="ametal">54<br><abbr title="Xenônio">Xe</abbr><br><span>Xenônio</span><br><span></span></td>
+
         </tr>
         <tr>
-            <td class="metal">37<br><abbr title="Rubidium">Rb</abbr></td>
-            <td class="metal">38<br><abbr title="Strontium">Sr</abbr></td>
-            <td class="metal">39<br><abbr title="Yttrium">Y</abbr></td>
-            <td class="metal">40<br><abbr title="Zirconium">Zr</abbr></td>
-            <td class="metal">41<br><abbr title="Niobium">Nb</abbr></td>
-            <td class="metal">42<br><abbr title="Molybdenum">Mo</abbr></td>
-            <td class="metal">43<br><abbr title="Technetium">Tc</abbr></td>
-            <td class="metal">44<br><abbr title="Ruthenium">Ru</abbr></td>
-            <td class="metal">45<br><abbr title="Rhodium">Rh</abbr></td>
-            <td class="metal">46<br><abbr title="Palladium">Pd</abbr></td>
-            <td class="metal">47<br><abbr title="Silver">Ag</abbr></td>
-            <td class="metal">48<br><abbr title="Cadmium">Cd</abbr></td>
-            <td class="metal">49<br><abbr title="Indium">In</abbr></td>
-            <td class="metal">50<br><abbr title="Tin">Sn</abbr></td>
-            <td class="ametal">51<br><abbr title="Antimony">Sb</abbr></td>
-            <td class="ametal">52<br><abbr title="Tellurium">Te</abbr></td>
-            <td class="ametal">53<br><abbr title="Iodine">I</abbr></td>
-            <td class="ametal">54<br><abbr title="Xenon">Xe</abbr></td>
-        </tr>
-        <tr>
-            <td class="metal">55<br><abbr title="Ceasium">Cs</abbr></td>
-            <td class="metal">56<br><abbr title="Barium">Ba</abbr></td>
+            <td class="metal">55<br><abbr title="Césio">Cs</abbr><br><span>Césio</span><br><span></span></td>
+            <td class="metal">56<br><abbr title="Bário">Ba</abbr><br><span>Bário</span><br><span></span></td>
             <td style="empty-cells: hide;"></td>
-            <td class="metal">72<br><abbr title="Hafnium">Hf</abbr></td>
-            <td class="metal">73<br><abbr title="Tantalum">Ta</abbr></td>
-            <td class="metal">74<br><abbr title="Tungsten">W</abbr></td>
-            <td class="metal">75<br><abbr title="Rhenium">Re</abbr></td>
-            <td class="metal">76<br><abbr title="Osmium">Os</abbr></td>
-            <td class="metal">77<br><abbr title="Iridium">Ir</abbr></td>
-            <td class="metal">78<br><abbr title="Platium">Pt</abbr></td>
-            <td class="metal">79<br><abbr title="Gold">Au</abbr></td>
-            <td class="metal">80<br><abbr title="Mercury">Hg</abbr></td>
-            <td class="metal">81<br><abbr title="Thallium">Tl</abbr></td>
-            <td class="metal">82<br><abbr title="Lead">Pb</abbr></td>
-            <td class="metal">83<br><abbr title="Bismuth">Bi</abbr></td>
-            <td class="ametal">84<br><abbr title="Polonium">Po</abbr></td>
-            <td class="ametal">85<br><abbr title="Astatine">At</abbr></td>
-            <td class="ametal">86<br><abbr title="Radon">Rn</abbr></td>
+            <td class="metal">72<br><abbr title="Háfnio">Hf</abbr><br><span>Háfnio</span><br><span></span></td>
+            <td class="metal">73<br><abbr title="Tântalo">Ta</abbr><br><span>Tântalo</span><br><span></span></td>
+            <td class="metal">74<br><abbr title="Tungstênio">W</abbr><br><span>Tungstênio</span><br><span></span></td>
+            <td class="metal">75<br><abbr title="Rênio">Re</abbr><br><span>Rênio</span><br><span></span></td>
+            <td class="metal">76<br><abbr title="Ósmio">Os</abbr><br><span>Ósmio</span><br><span></span></td>
+            <td class="metal">77<br><abbr title="Irídio">Ir</abbr><br><span>Irídio</span><br><span></span></td>
+            <td class="metal">78<br><abbr title="Platina">Pt</abbr><br><span>Platina</span><br><span></span></td>
+            <td class="metal">79<br><abbr title="Ouro">Au</abbr><br><span>Ouro</span><br><span></span></td>
+            <td class="metal">80<br><abbr title="Mercúrio">Hg</abbr><br><span>Mercúrio</span><br><span></span></td>
+            <td class="metal">81<br><abbr title="Tálio">Tl</abbr><br><span>Tálio</span><br><span></span></td>
+            <td class="metal">82<br><abbr title="Chumbo">Pb</abbr><br><span>Chumbo</span><br><span></span></td>
+            <td class="metal">83<br><abbr title="Bismuto">Bi</abbr><br><span>Bismuto</span><br><span></span></td>
+            <td class="metal">84<br><abbr title="Polônio">Po</abbr><br><span>Polônio</span><br><span></span></td>
+            <td class="ametal">85<br><abbr title="Ástato">At</abbr><br><span>Ástato</span><br><span></span></td>
+            <td class="ametal">86<br><abbr title="Radônio">Rn</abbr><br><span>Radônio</span><br><span></span></td>
         </tr>
         <tr>
-            <td class="metal">87<br><abbr title="Francium">Fr</abbr></td>
-            <td class="metal">88<br><abbr title="Radium">Ra</abbr></td>
+            <td class="metal">87<br><abbr title="Frâncio">Fr</abbr><br><span>Frâncio</span><br><span></span></td>
+            <td class="metal">88<br><abbr title="Rádio">Ra</abbr><br><span>Rádio</span><br><span></span></td>
             <td style="empty-cells: hide;"></td>
-            <td class="metal">104<br><abbr title="Rutherfordium">Rf</abbr></td>
-            <td class="metal">105<br><abbr title="Dubnium">Db</abbr></td>
-            <td class="metal">106<br><abbr title="Seaborgium">Sg</abbr></td>
-            <td class="metal">107<br><abbr title="Bohrium">Bh</abbr></td>
-            <td class="metal">108<br><abbr title="Hassium">Hs</abbr></td>
-            <td class="metal">109<br><abbr title="Meitnerium">Mt</abbr></td>
-            <td class="metal">110<br><abbr title="Darmstadtium">Ds</abbr></td>
-            <td class="metal">111<br><abbr title="Roentgenium">Rg</abbr></td>
-            <td class="metal">112<br><abbr title="Copernicium">Cn</abbr></td>
-            <td class="metal">113<br><abbr title="Nihonium">Nh</abbr></td>
-            <td class="metal">114<br><abbr title="Flerovium">Fl</abbr></td>
-            <td class="metal">115<br><abbr title="Moscovium">Mc</abbr></td>
-            <td class="metal">116<br><abbr title="Livermorium">Lv</abbr></td>
-            <td class="ametal">117<br><abbr title="Tennessine">Ts</abbr></td>
-            <td class="ametal">118<br><abbr title="Oganesson">Og</abbr></td>
+            <td class="metal">104<br><abbr title="Rutherfórdio">Rf</abbr><br><span>Rutherfórdio</span><br><span></span></td>
+            <td class="metal">105<br><abbr title="Dúbnio">Db</abbr><br><span>Dúbnio</span><br><span></span></td>
+            <td class="metal">106<br><abbr title="Seabórgio">Sg</abbr><br><span>Seabórgio</span><br><span></span></td>
+            <td class="metal">107<br><abbr title="Bóhrio">Bh</abbr><br><span>Bóhrio</span><br><span></span></td>
+            <td class="metal">108<br><abbr title="Hássio">Hs</abbr><br><span>Hássio</span><br><span></span></td>
+            <td class="metal">109<br><abbr title="Meitnério">Mt</abbr><br><span>Meitnério</span><br><span></span></td>
+            <td class="metal">110<br><abbr title="Darmstádio">Ds</abbr><br><span>Darmstádio</span><br><span></span></td>
+            <td class="metal">111<br><abbr title="Roentgênio">Rg</abbr><br><span>Roentgênio</span><br><span></span></td>
+            <td class="metal">112<br><abbr title="Copernício">Cn</abbr><br><span>Copernício</span><br><span></span></td>
+            <td class="metal">113<br><abbr title="Nihônio">Nh</abbr><br><span>Nihônio</span><br><span></span></td>
+            <td class="metal">114<br><abbr title="Florovium">Fl</abbr><br><span>Florovium</span><br><span></span></td>
+            <td class="metal">115<br><abbr title="Moscóvio">Mc</abbr><br><span>Moscóvio</span><br><span></span></td>
+            <td class="metal">116<br><abbr title="Livermório">Lv</abbr><br><span>Livermório</span><br><span></span></td>
+            <td class="metal">117<br><abbr title="Tenessino">Ts</abbr><br><span>Tenessino</span><br><span></span></td>
+            <td class="ametal">118<br><abbr title="Oganessônio">Og</abbr><br><span>Oganessônio</span><br><span></span></td>
+
         </tr>
         <tr id="lnt">
-            <td rowspan="3" colspan="3" style="empty-cells: hide;" ></td>
-            <td class="metal">57<br><abbr title="Lanthanum">La</abbr></td>
-            <td class="metal">58<br><abbr title="Cerium">Ce</abbr></td>
-            <td class="metal">59<br><abbr title="Praseodymium">Pr</abbr></td>
-            <td class="metal">60<br><abbr title="Neodymium">Nd</abbr></td>
-            <td class="metal">61<br><abbr title="Promethium">Pm</abbr></td>
-            <td class="metal">62<br><abbr title="Samarium">Sm</abbr></td>
-            <td class="metal">63<br><abbr title="Europium">Eu</abbr></td>
-            <td class="metal">64<br><abbr title="Gadolinium">Gd</abbr></td>
-            <td class="metal">65<br><abbr title="Terbium">Tb</abbr></td>
-            <td class="metal">66<br><abbr title="Dysprosium">Dy</abbr></td>
-            <td class="metal">67<br><abbr title="Holmium">Ho</abbr></td>
-            <td class="metal">68<br><abbr title="Erbium">Er</abbr></td>
-            <td class="metal">69 <br><abbr title="Thulium">Tm</abbr></td>
-            <td class="metal">70<br><abbr title="Yttterbium">Yb</abbr></td>
-            <td class="metal">71<br><abbr title="Lutetium">Lu</abbr></td>
+            <td rowspan="3" colspan="3" style="empty-cells: hide;"></td>
+            <td class="metal">57<br><abbr title="Lantânio">La</abbr><br><span>Lantânio</span><br><span></span></td>
+            <td class="metal">58<br><abbr title="Cério">Ce</abbr><br><span>Cério</span><br><span></span></td>
+            <td class="metal">59<br><abbr title="Praseodímio">Pr</abbr><br><span>Praseodímio</span><br><span></span></td>
+            <td class="metal">60<br><abbr title="Neodímio">Nd</abbr><br><span>Neodímio</span><br><span></span></td>
+            <td class="metal">61<br><abbr title="Promécio">Pm</abbr><br><span>Promécio</span><br><span></span></td>
+            <td class="metal">62<br><abbr title="Samário">Sm</abbr><br><span>Samário</span><br><span></span></td>
+            <td class="metal">63<br><abbr title="Európio">Eu</abbr><br><span>Európio</span><br><span></span></td>
+            <td class="metal">64<br><abbr title="Gadolínio">Gd</abbr><br><span>Gadolínio</span><br><span></span></td>
+            <td class="metal">65<br><abbr title="Térbio">Tb</abbr><br><span>Térbio</span><br><span></span></td>
+            <td class="metal">66<br><abbr title="Disprósio">Dy</abbr><br><span>Disprósio</span><br><span></span></td>
+            <td class="metal">67<br><abbr title="Hólmio">Ho</abbr><br><span>Hólmio</span><br><span></span></td>
+            <td class="metal">68<br><abbr title="Érbio">Er</abbr><br><span>Érbio</span><br><span></span></td>
+            <td class="metal">69 <br><abbr title="Túlio">Tm</abbr><br><span>Túlio</span><br><span></span></td>
+            <td class="metal">70<br><abbr title="Itérbio">Yb</abbr><br><span>Itérbio</span><br><span></span></td>
+            <td class="metal">71<br><abbr title="Lutécio">Lu</abbr><br><span>Lutécio</span><br><span></span></td>
+
         </tr>
         <tr id="act">
-            <td class="metal">89<br><abbr title="Actinium">Ac</abbr></td>
-            <td class="metal">90<br><abbr title="Thorium">Th</abbr></td>
-            <td class="metal">91<br><abbr title="Protactinium">Pa</abbr></td>
-            <td class="metal">92<br><abbr title="Uranium">U</abbr></td>
-            <td class="metal">93<br><abbr title="Neptunium">Np</abbr></td>
-            <td class="metal">94<br><abbr title="Plutonium">Pu</abbr></td>
-            <td class="metal">95<br><abbr title="Americium">Am</abbr></td>
-            <td class="metal">96<br><abbr title="Curium">Cm</abbr></td>
-            <td class="metal">97<br><abbr title="Berkelium">Bk</abbr></td>
-            <td class="metal">98<br><abbr title="Californium">Cf</abbr></td>
-            <td class="metal">99<br><abbr title="Einsteinium">Es</abbr></td>
-            <td class="metal">100<br><abbr title="Fermium">Fm</abbr></td>
-            <td class="metal">101<br><abbr title="Mendelevium">Md</abbr></td>
-            <td class="metal">102 <br><abbr title="Nobelium">No</abbr></td>
-            <td class="metal">103<br><abbr title="Lawrencium">Lr</abbr></td>
+            <td class="metal">89<br><abbr title="Actínio">Ac</abbr><br><span>Actínio</span><br><span></span></td>
+            <td class="metal">90<br><abbr title="Tório">Th</abbr><br><span>Tório</span><br><span></span></td>
+            <td class="metal">91<br><abbr title="Protactínio">Pa</abbr><br><span>Protactínio</span><br><span></span></td>
+            <td class="metal">92<br><abbr title="Urânio">U</abbr><br><span>Urânio</span><br><span></span></td>
+            <td class="metal">93<br><abbr title="Neptúnio">Np</abbr><br><span>Neptúnio</span><br><span></span></td>
+            <td class="metal">94<br><abbr title="Plutónio">Pu</abbr><br><span>Plutónio</span><br><span></span></td>
+            <td class="metal">95<br><abbr title="Amerício">Am</abbr><br><span>Amerício</span><br><span></span></td>
+            <td class="metal">96<br><abbr title="Cúrio">Cm</abbr><br><span>Cúrio</span><br><span></span></td>
+            <td class="metal">97<br><abbr title="Berquélio">Bk</abbr><br><span>Berquélio</span><br><span></span></td>
+            <td class="metal">98<br><abbr title="Califórnio">Cf</abbr><br><span>Califórnio</span><br><span></span></td>
+            <td class="metal">99<br><abbr title="Einsténio">Es</abbr><br><span>Einsténio</span><br><span></span></td>
+            <td class="metal">100<br><abbr title="Férmio">Fm</abbr><br><span>Férmio</span><br><span></span></td>
+            <td class="metal">101<br><abbr title="Mendelévio">Md</abbr><br><span>Mendelévio</span><br><span></span></td>
+            <td class="metal">102<br><abbr title="Nobélio">No</abbr><br><span>Nobélio</span><br><span></span></td>
+            <td class="metal">103<br><abbr title="Laurêncio">Lr</abbr><br><span>Laurêncio</span><br><span></span></td>
+
         </tr>
     </table>
 
