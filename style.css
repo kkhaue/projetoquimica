@@ -54,20 +54,6 @@ td:empty {
 }
 
 
-#lantat {
-  width: 100%;
-  max-width: 100px;
-  position: absolute; /* Definir a posição absoluta para controlar o posicionamento */
-  bottom: 0; /* Colocar no canto inferior */
-  left: 210px; /* Colocar no canto esquerdo */
-  top: 660px;
-  margin: 15px; /* Adicionar margem para separá-lo um pouco das bordas */
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-
-
   label {
     position: absolute;
     top: 20px;
